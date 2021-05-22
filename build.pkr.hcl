@@ -57,7 +57,7 @@ build {
 
   provisioner "shell" {
     inline = [
-      "zcat /boot/vmlinuz > /boot/vmlinux",
+      "zcat /boot/firmware/vmlinuz > /boot/firmware/vmlinux",
       "chmod +x /boot/firmware/auto_decompress_kernel",
       "chmod +x /etc/apt/apt.conf.d/999_decompress_rpi_kernel"
     ]
